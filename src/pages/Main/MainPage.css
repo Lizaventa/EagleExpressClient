@@ -1,0 +1,218 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #fdf7f1;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Контейнер */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Навигационное меню */
+  .nav {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  /* Основной контент */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    background-color: #fefaf6;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bio-info {
+    max-width: 50%;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-family: "Georgia", serif; /* Более красивый и читаемый шрифт */
+    font-size: 1.1rem; /* Увеличенный размер шрифта */
+    line-height: 1.6; /* Увеличенный межстрочный интервал для улучшения читаемости */
+    color: #333; /* Темно-серый цвет текста */
+    margin: 20px auto; /* Добавляет пространство вокруг параграфа */
+    max-width: 700px; /* Ограничиваем ширину текста для лучшего восприятия */
+    text-align: justify; /* Выравнивание текста по ширине */
+    letter-spacing: 0.5px; /* Небольшой интервал между буквами */
+  }
+  
+  .description:hover {
+    color: #444; /* Легкое изменение цвета текста при наведении */
+    transition: color 0.3s ease-in-out; /* Плавный переход цвета */
+  }
+  
+  .handle {
+    margin-bottom: 20px;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  /* Социальные иконки */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+  }
+  
+  /* Изображение */
+  .image-container img {
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .bio-info,
+    .image-container {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  /* Анимация навигационного меню */
+.nav a {
+    position: relative;
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #ff7a59; /* Изменение цвета */
+    transform: scale(1.1); /* Небольшое увеличение */
+  }
+  
+  /* Анимация социальных иконок */
+  .social-icons a {
+    font-size: 1.5rem;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ff7a59; /* Изменение цвета */
+    transform: scale(1.2); /* Увеличение */
+  }
+  
+  /* Плавность для изображений (дополнительно) */
+  .image-container img {
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05); /* Легкое увеличение */
+  }
+
+  .social-icons a:hover {
+    color: #ff7a59;
+    transform: scale(1.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+/* Footer */
+.footer {
+    width: 100%; /* На всю ширину */
+    text-align: center;
+    background-color: #fefaf6; /* Цвет фона */
+    padding: 10px 0;
+    border-top: 1px solid #ddd; /* Граница сверху */
+    font-size: 1rem;
+    color: #666;
+    position: fixed; /* Фиксируем футер внизу */
+    bottom: 0; /* Прижимаем к нижнему краю */
+    left: 0;
+  }
+  
+  .footer:hover {
+    background-color: #fff1e6; /* Легкий эффект при наведении */
+  }
+
+  /* Навигационное меню */
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Элементы по краям */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fefaf6; /* Цвет фона */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Ссылки в меню */
+  .nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Sign In кнопка */
+  .sign-in-btn {
+    padding: 8px 16px;
+    /* background-color: #e67e22;  Цвет кнопки */
+    color: #fff; /* Цвет текста */
+    border-radius: 5px; /* Скруглённые углы */
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Анимации */
+  }
+  
+  .sign-in-btn:hover {
+   /* background-color: #d35400;  Темнее при наведении */
+    transform: scale(1.05); /* Легкое увеличение */
+  }
+
+  h1, h2 {
+    color: #4CAF50;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  ul {
+    list-style-type: disc;
+    margin-left: 5px;
+  }
+  .cta {
+    text-align: center;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 5px;
+  }

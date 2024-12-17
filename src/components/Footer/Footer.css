@@ -1,0 +1,18 @@
+
+/* Footer */
+.footer {
+    width: 100%; /* На всю ширину */
+    text-align: center;
+    background-color: #fefaf6; /* Цвет фона */
+    padding: 10px 0;
+    border-top: 1px solid #ddd; /* Граница сверху */
+    font-size: 1rem;
+    color: #666;
+    position: fixed; /* Фиксируем футер внизу */
+    bottom: 0; /* Прижимаем к нижнему краю */
+    left: 0;
+  }
+  
+  .footer:hover {
+    background-color: #fff1e6; /* Легкий эффект при наведении */
+  }
